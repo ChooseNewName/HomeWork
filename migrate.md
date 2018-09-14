@@ -6,14 +6,15 @@
 
 ```
 create table lagou_city01 as
-	select d.id, p.cityName as province, c.cityName as city, d.cityName as district  	from (select * from china_city where depth=3) d join china_city c on 
-    d.parentId = c.id and c.depth=2 join china_city p on 
-  	c.parentId = p.id and p.depth=1;
+	select d.id, p.cityName as province, c.cityName as city, d.cityName as district  	
+	from (select * from china_city where depth=3) d join china_city c on 
+    	d.parentId = c.id and c.depth=2 join china_city p on 
+c.parentId = p.id and p.depth=1;
     
 insert into lagou_city01
-	select c.id, p.cityName as province, c.cityName as city, null as district 
+    select c.id, p.cityName as province, c.cityName as city, null as district 
     from (select * from china_city where depth=2) c join china_city p on 
-    c.parentId = p.id and p.depth = 1;
+c.parentId = p.id and p.depth = 1;
     
 select count(*) from lagou_city01;
 ```
