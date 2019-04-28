@@ -1,0 +1,16 @@
+.L{float: left;}
+.R{float: right;}
+.conBox{ width: 500px;}
+.conBox .conItem{ width: 250px; padding: 20px 0;}
+.conBox .conItem div.L{ padding-left: 10px; color: #333; font-size: 14px;}
+.conBox .conItem span{ display: block; font-weight: bold;}
+.conBox .conItem i{ margin-top: 8px;}
+.conBox .conItem .conIco1{ width: 29px; height: 29px; background-position: -296px -75px;}
+.conBox .conItem .conIco2{ width: 28px; height: 28px; background-position: -348px -75px;}
+.conBox .conItem .conIco3{ width: 32px; height: 21px; background-position: -403px -80px;}
+.wxBox{ width: 300px; padding: 15px 0px;}
+.wxBox .wxImg{ width: 161px;}
+.wxBox .wxTit{ padding-left: 10px; color: #333; font-size: 14px;}
+.wxBox .wxTit span{ display: block; font-weight: bold;}
+.backgroundElem,.aElem a,.iElem i{background:url(../images/backgroundIco.png);background-position: 0 0;background-repeat: no-repeat; display: block;}
+.verticalLine{width: 2px;height: 190px;background-color: rgba(0,0,0,.3);display: inline-block;position: absolute;left: 50%;}
